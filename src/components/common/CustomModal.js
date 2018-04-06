@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, Modal } from 'react-native';
+import { View, Text, Modal, Platform } from 'react-native';
 import { Spinner } from './Spinner';
 
 const CustomModal = (props) => {
    const { modalViewStyle, modalTextStyle } = styles;
+   const spinnerSize = Platform.OS === 'android' ? 100 : 1;
 return (
   <Modal
   visible={props.showModal}
@@ -18,7 +19,7 @@ return (
   <View style={modalViewStyle}>
   <Spinner
   color='#e67e22dd'
-  size={100}
+  size={spinnerSize}
   />
   </View>
 
