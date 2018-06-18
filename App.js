@@ -20,12 +20,7 @@ class App extends Component {
 
   componentWillMount() {
     const config = {
-      apiKey: 'AIzaSyAoMy_Y0BF7XVm95F-TG75or_tvgX-Q3Ew',
-      authDomain: 'strategy-dbc13.firebaseapp.com',
-      databaseURL: 'https://strategy-dbc13.firebaseio.com',
-      projectId: 'strategy-dbc13',
-      storageBucket: '',
-      messagingSenderId: '140762388762'
+      // configuration file from firebase for project
   };
 if (!firebase.apps.length) {
   firebase.initializeApp(config);
